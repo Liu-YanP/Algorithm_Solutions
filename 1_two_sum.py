@@ -20,7 +20,8 @@ class Solution(object):
 					return [i,j]
 
 	def twoSum2(self,nums,target):
-		lookup = {}
+		'''用空间换时间'''
+		lookup = {}#创建字典存储轮询过的数字及其索引
 		for i,num in enumerate(nums):
 			if target-num in lookup:
 				return [lookup[target-num],i]
