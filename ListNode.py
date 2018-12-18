@@ -10,7 +10,7 @@ class ListNode:
 		while cur_node.next:
 			tmp.append(cur_node.next.val)
 			cur_node = cur_node.next
-		return str(tmp)
+		return ' -> '.join([str(i) for i in tmp])
 
 
 
